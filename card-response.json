@@ -7,7 +7,7 @@
         {
           "label": "Schedule Tour",
           "dataType": "STRING",
-          "value": "${schedule_in_person_tour_url}"
+          "value": "${property.schedule_in_person_tour_url}"
         }
       ]
     }
