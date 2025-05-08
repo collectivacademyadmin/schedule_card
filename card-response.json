@@ -5,10 +5,10 @@
       "title": "Tour Scheduling",
       "properties": [
         {
-          "label": "Schedule Tour",
+          "label": "Schedule Tour", 
           "dataType": "LINK",
           "value": "Schedule Your Tour",
-          "linkUrl": "{{schedule_in_person_tour_url}}"
+          "linkUrl": "${schedule_in_person_tour_url}"
         }
       ]
     }
