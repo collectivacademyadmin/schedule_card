@@ -7,7 +7,7 @@
         {
           "label": "Schedule Tour",
           "dataType": "STRING",
-          "value": "${email}"
+          "value": "${firstname}"
         }
       ]
     }
