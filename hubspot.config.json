@@ -1,32 +1,30 @@
 {
-  "runtime": "3.0",
-  "version": "1.0",
-  "extensions": {
-    "crm": {
-      "cards": [
+  "results": [
+    {
+      "objectId": 1,
+      "title": "Contact Information",
+      "properties": [
         {
-          "objectTypes": [
-            {
-              "name": "contacts"
-            }
-          ],
-          "title": "In-Person Tour Scheduling",
-          "file": "crm-card.html",
-          "properties": {
-            "width": "STANDARD",
-            "height": "TALL"
-          },
-          "fetch": {
-            "targetFunction": "crm-card",
-            "objectTypes": [
-              {
-                "name": "contacts",
-                "propertiesToSend": ["schedule_in_person_tour_url"]
-              }
-            ]
-          }
+          "label": "First Name",
+          "dataType": "STRING",
+          "value": "${firstname}"
+        },
+        {
+          "label": "Welcome Message",
+          "dataType": "STRING",
+          "value": "Hello ${firstname}, welcome to your personalized tour scheduling!"
+        }
+      ],
+      "actions": [
+        {
+          "type": "IFRAME",
+          "width": 890,
+          "height": 748,
+          "uri": "https://example.com/schedule-tour?contact=${firstname}",
+          "label": "Schedule Tour",
+          "associatedObjectProperties": ["firstname", "schedule_in_person_tour_url"]
         }
       ]
     }
-  }
+  ]
 }
