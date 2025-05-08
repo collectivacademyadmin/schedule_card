@@ -1,0 +1,32 @@
+{
+  "runtime": "3.0",
+  "version": "1.0",
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "objectTypes": [
+            {
+              "name": "contacts"
+            }
+          ],
+          "title": "In-Person Tour Scheduling",
+          "file": "crm-card.html",
+          "properties": {
+            "width": "STANDARD",
+            "height": "TALL"
+          },
+          "fetch": {
+            "targetFunction": "crm-card",
+            "objectTypes": [
+              {
+                "name": "contacts",
+                "propertiesToSend": ["schedule_in_person_tour_url"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
